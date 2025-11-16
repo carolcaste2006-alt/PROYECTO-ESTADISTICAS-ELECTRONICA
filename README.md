@@ -27,7 +27,7 @@ Para la visualizacion de este es necesario contar con lo siguiente:
 
 El archivo en formato HTML contiene:
 
-- "<head>" con metadata (título, autores, fecha).
+-  "< head >" con metadata (título, autores, fecha).
 - Scripts de Pandoc para interacción interna.
 - jQuery incluido por Pandoc.
 - Contenido renderizado a partir del documento origen.
