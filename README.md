@@ -57,10 +57,10 @@ Para reproducirlo se puede de dos maneras:
 Doble clic → CODIGOS.html
 
 ## Autores
-- *Carol Castellanos*
-- *Jairo Cordoba*
-- *Samuel Medina*
-- *Paula Prado*
+- *Carol Valentina Castellanos Jaimes*
+- *Jairo Jose Cordoba Musso*
+- *Samuel David Medina Contreras*
+- *Paula Andrea Prado Iglesias*
 
 Asignatura de probabilidad y estadisticas. Facultad de ingenieria, Universidad del Magdalena.
 
