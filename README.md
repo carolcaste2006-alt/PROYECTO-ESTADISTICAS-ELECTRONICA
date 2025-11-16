@@ -53,7 +53,7 @@ El archivo CODIGOS.html fue generado desde un documento R Markdown (.Rmd) utiliz
 Para reproducirlo se puede de dos maneras:
 
 Se puede abrir manualmente:
-1. Doble clic → CODIGOS.html
+1. Doble clic → PROYECTO-ESTADISTICAS.html
 2. Clic en el botón Code
 3. Clic en Download ZIP
 4. Extraer la carpeta
