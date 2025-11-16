@@ -52,9 +52,16 @@ El archivo CODIGOS.html fue generado desde un documento R Markdown (.Rmd) utiliz
 
 Para reproducirlo se puede de dos maneras:
 
-1. RStudio lo abre automáticamente en el visor.
-2. También se puede abrir manualmente:
-Doble clic → CODIGOS.html
+Se puede abrir manualmente:
+1. Doble clic → CODIGOS.html
+2. Clic en el botón Code
+3. Clic en Download ZIP
+4. Extraer la carpeta
+   
+En RStudio:
+
+1. File → Open File…
+2. Seleccionar el archivo .Rmd del proyecto (Este archivo es el que generó tu HTML)
 
 ## Autores
 - *Carol Valentina Castellanos Jaimes*
