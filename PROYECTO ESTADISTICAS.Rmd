@@ -1,0 +1,198 @@
+---
+title: "ANALISIS ESTADISTICA"
+author: "Jairo  Cordoba, Carol Castellanos, Samuel Medina, Paula Prado"
+date: "2025-11-09"
+output: 
+ html_document: 
+  theme: cerulean
+  toc: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# EDAD (AGE)
+
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+
+library(summarytools)
+library(fdth)
+library(readr)
+DATABASE_Respuestas_de_formulario_1 <- read_csv("DATABASE - Respuestas de formulario 1.csv")
+#TABLA
+tabla1<-fdt(DATABASE_Respuestas_de_formulario_1$AGE,k=nclass.Sturges(DATABASE_Respuestas_de_formulario_1$AGE));tabla1
+# MEDIDAS
+library(DescTools)
+Desc(DATABASE_Respuestas_de_formulario_1$AGE,plotit=FALSE,main="")
+#GRAFICA
+#Histograma
+hist(DATABASE_Respuestas_de_formulario_1$AGE,main ="EDADES",xlab="Edad",
+ col= "palevioletred1")
+ boxplot(DATABASE_Respuestas_de_formulario_1$AGE,col ="cyan3",xlab="",horizontal =T)
+```
+
+# PRESENCIA DE DISCAPACIDAD (DISC)
+
+```{r}
+#TABLA
+freq(DATABASE_Respuestas_de_formulario_1$DISC)
+# MEDIDAS
+library(DescTools)
+Desc(DATABASE_Respuestas_de_formulario_1$DISC,plotit=FALSE,main="")
+z<-table(DATABASE_Respuestas_de_formulario_1$DISC);z
+# GRAFICA
+#BARPLOT
+barplot(height=z,col=c("purple1","yellow1","green3"),main="Presencia de Discapacidad", ylab= "Frecuencia", xlab="")
+```
+
+# HORAS DE ESTUDIO (STDH)
+
+```{r}
+#TABLA
+freq(DATABASE_Respuestas_de_formulario_1$STDH)
+# MEDIDAS
+library(DescTools)
+Desc(DATABASE_Respuestas_de_formulario_1$STDH,plotit=FALSE,main="")
+z2<-table(DATABASE_Respuestas_de_formulario_1$STDH);z
+# GRAFICA
+#BARPLOT
+barplot(height=z2,col=c("purple1","yellow1","green3"),main="HORAS DE ESTUDIO (categoria)", ylab= "Frecuencia", xlab="")
+```
+
+# LABURANTE (LAB)
+```{r}
+#TABLA
+freq(DATABASE_Respuestas_de_formulario_1$LAB)
+# MEDIDAS
+library(DescTools)
+Desc(DATABASE_Respuestas_de_formulario_1$LAB,plotit=FALSE,main="")
+z3<-table(DATABASE_Respuestas_de_formulario_1$LAB);z3
+# GRAFICA
+#BARPLOT
+barplot(height=z3,col=c("purple1","yellow1","green3"),main="ESTUDIANTES QUE TRABAJAN", ylab= "Frecuencia", xlab="")
+```
+
+# PROMEDIO ACADEMICO (PM)
+
+```{r}
+#TABLA
+tabla1<-fdt(DATABASE_Respuestas_de_formulario_1$PM,k=nclass.Sturges(DATABASE_Respuestas_de_formulario_1$PM));tabla1
+# MEDIDAS
+library(DescTools)
+Desc(DATABASE_Respuestas_de_formulario_1$PM,plotit=FALSE,main="")
+#GRAFICA
+#Histograma
+hist(DATABASE_Respuestas_de_formulario_1$PM,main ="PROMEDIOS",xlab="Promedio",
+ col= "palevioletred1")
+ boxplot(DATABASE_Respuestas_de_formulario_1$PM,col ="cyan3",xlab="",horizontal =T)
+```
+
+# DISPONIBILIDAD DE PASATIEMPOS (PS)
+
+```{r}
+#TABLA
+freq(DATABASE_Respuestas_de_formulario_1$PS)
+# MEDIDAS
+library(DescTools)
+Desc(DATABASE_Respuestas_de_formulario_1$PS,plotit=FALSE,main="")
+z4<-table(DATABASE_Respuestas_de_formulario_1$PS);z4
+# GRAFICA
+#BARPLOT
+barplot(height=z4,col=c("purple1","yellow1","green3"),main="Disponibilidad en pasatiempos", ylab= "Frecuencia", xlab="")
+```
+
+# SEMESTRE CON CANCELACIÓN DE MATERIAS (SC)
+```{r}
+#TABLA
+tabla5<-freq(DATABASE_Respuestas_de_formulario_1$SC);tabla5
+# MEDIDAS
+library(DescTools)
+Desc(DATABASE_Respuestas_de_formulario_1$SC,plotit=FALSE,main="")
+#GRAFICA
+
+ boxplot(DATABASE_Respuestas_de_formulario_1$SC,col ="cyan3",xlab="",horizontal =T)
+```
+
+# MATERIAS MATRICULADAS (MM)
+
+```{r}
+#TABLA
+tabla5<-freq(DATABASE_Respuestas_de_formulario_1$MM);tabla5
+# MEDIDAS
+library(DescTools)
+Desc(DATABASE_Respuestas_de_formulario_1$MM,plotit=FALSE,main="")
+#GRAFICA
+z6<-table(DATABASE_Respuestas_de_formulario_1$MM);z6
+barplot(height=z6,col=c("purple1","yellow1","green3","pink","blue1","orange"),main="MATERIAS MATRICULADAS",)
+
+boxplot(DATABASE_Respuestas_de_formulario_1$MM,col ="cyan3",xlab="",horizontal =T)
+```
+
+# SEMESTRES ACTIVO EN EL PROGRAMA (SA)
+```{r}
+#TABLA
+tabla8<-freq(DATABASE_Respuestas_de_formulario_1$SA);tabla8
+tabla9<-fdt(DATABASE_Respuestas_de_formulario_1$SA,k=nclass.Sturges(DATABASE_Respuestas_de_formulario_1$SA));tabla9
+
+
+# MEDIDAS
+library(DescTools)
+Desc(DATABASE_Respuestas_de_formulario_1$SA,plotit=FALSE,main="")
+#GRAFICA
+z6<-table(DATABASE_Respuestas_de_formulario_1$SA);z6
+barplot(height=z6,col=c("purple1","yellow1","green3","pink","blue1","orange"),main="SEMESTRES CURSADOS",)
+
+boxplot(DATABASE_Respuestas_de_formulario_1$SA,col ="cyan3",xlab="",horizontal =T)
+```
+
+# NUMERO DE MATERIAS REPOBRADAS (NMR)
+
+```{r}
+#TABLA
+tabla8<-freq(DATABASE_Respuestas_de_formulario_1$NMR);tabla8
+
+
+# MEDIDAS
+library(DescTools)
+Desc(DATABASE_Respuestas_de_formulario_1$NMR,plotit=FALSE,main="")
+#GRAFICA
+z6<-table(DATABASE_Respuestas_de_formulario_1$NMR);z6
+barplot(height=z6,col=c("purple1","yellow1","green3","pink","blue1","orange"),main=" Materias Reprobadas",)
+
+boxplot(DATABASE_Respuestas_de_formulario_1$NMR,col ="cyan3",xlab="",horizontal =T)
+```
+
+# PROBABILIDADES Y CASOS INTERESANTES
+
+## CASO I
+
+Un caso interesante de estudio es verificar las probabilidades de que tres estudiantes estudiantes, en una muestra seleccionada  tenga dos o más semestres con materias canceladas, entonces teniendo 25 estudiantes de los 100 estudiantes encuestados, tomando en cuenta que 35 estudiantes han tenido que cancelar dos o más materias, encontramos que:
+
+Numero total de estudiantes encuestados: $N= 100$
+Estudiantes seleccionados: $n=25$
+Estudiantes que han cancelado dos o más materias: $k=35$
+
+Si realizamos una distribución Binomial:
+```{r}
+prob<-1-pbinom(q=2, size=25, prob=0.35);prob
+```
+
+ La probabilidad da un 99,7%, esto quiere decir que en una muestra de 25 estudiantes de los encuestados (siendo esta una cantidad considerable) es casi seguro que encontraremos un estudiante con dos o más semestres cancelando materias
+ 
+## CASO II
+Usaremos:
+1. la probabilidad de que un estudiante haya reprobado materias
+2. la probabilidad de que un estudiante estudie menos de 10 horas semanales
+
+para poder calcular:
+la probabilidad de que un estudiante que estudia 10 o menos horas semanales repruebe materias
+ 
+ 
+conocemos la probabilidad de que haya reprobado materias: $P1=0.89$
+conocemos la probabilidad de que estudie 10 o menos horas: $P2=0.56$
+
+Entones: $P1\cap P2=P1*P2=0.89*0.56=0.498$
+
+Es decir un 49,8%
