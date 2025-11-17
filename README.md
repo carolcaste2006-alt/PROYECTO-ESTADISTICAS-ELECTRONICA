@@ -13,7 +13,7 @@ Este repositorio contiene los archivos generados durante el analisis descriptivo
 - **Diccionario categorico de las variables.xlsx**: diccionario de clasificacion de las variables utilizadas para el analisis (variable, etiqueta, tipo, unidades/categorías, valores válidos, reglas de NA).
 - **Informe final_APA.pdf**: informe en formato APA que presenta el abstract, objetivos, método, resultados descriptivos, probabilidad empírica, discusión, limitaciones y referencias.
 - **Presentación de los resultados.pdf**: presentación breve y ordenada del análisis que facilita su comprension.
-- **Código hecho para el análisis.rmd**: Codigo mediante el cual se hizo la presentación del html.
+- **Código hecho para el análisis.rmd**: Codigo mediante el cual se hizo la presentación del HTML.
 - **Código utilizado para el análisis.html**: Codigo en HTML que muestra el resultado final de el proyecto a realizar.
 
 ## Requisitos 
@@ -49,7 +49,7 @@ Esta estructuralizado de la siguiente manera:
 - CASO I
 - CASO II
 
-El archivo CODIGOS.html fue generado desde un documento R Markdown (.Rmd) utilizando RStudio.
+El archivo PROYECTO-ESTADISTICAS.html fue generado desde un documento R Markdown (.Rmd) utilizando RStudio.
 
 Para reproducirlo se puede de dos maneras:
 
