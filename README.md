@@ -32,6 +32,8 @@ El archivo en formato HTML contiene:
 - Scripts de Pandoc para interacción interna.
 - jQuery incluido por Pandoc.
 - Contenido renderizado a partir del documento origen.
+
+Incluye un índice con las variables analizadas —como edad, presencia de discapacidad y horas de estudio, entre otras— y desarrolla cada sección con tablas, gráficos e indicadores estadísticos, todos generados automáticamente por la herramienta usada (RMarkdown/Pandoc); es un reporte descriptivo donde se presentan distribuciones, frecuencias y visualizaciones para cada variable del estudio.
   
 Esta estructuralizado de la siguiente manera:
 
@@ -51,7 +53,7 @@ Esta estructuralizado de la siguiente manera:
 
 El archivo PROYECTO-ESTADISTICAS.html fue generado desde un documento R Markdown (.Rmd) utilizando RStudio.
 
-Para reproducirlo se puede de dos maneras:
+Para reproducirlo se puede de varias maneras:
 
 Se puede abrir manualmente:
 1. Doble clic → PROYECTO-ESTADISTICAS.html
@@ -59,11 +61,17 @@ Se puede abrir manualmente:
 3. Clic en la parte derecha en Download raw file.
 4. Extraer el archivo.
 
-Ademas, tambien es posible en:|
+Ademas, tambien es posible en:
 1. Clic en More file actions (...)
 2. Clic en Raw file content.
 3. Clic en Download.
 4. O mantener Ctrl- shift-s en el teclado.
+
+Y para reproducir todo el repositorio:
+1. Clic en Code.
+2. Clic en Download ZIP.
+3. En descarda del File Explorer, clic en la carpeta Proyecto-estadisticas-electronica.ZIP
+4. Clic en el archivo PROYECTO-ESTADISTICAS.html
      
 En RStudio:
 
