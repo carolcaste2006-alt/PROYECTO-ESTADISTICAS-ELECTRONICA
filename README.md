@@ -13,6 +13,7 @@ Este repositorio contiene los archivos generados durante el analisis descriptivo
 - **Diccionario categorico de las variables.xlsx**: diccionario de clasificacion de las variables utilizadas para el analisis (variable, etiqueta, tipo, unidades/categorías, valores válidos, reglas de NA).
 - **Informe final_APA.pdf**: informe en formato APA que presenta el abstract, objetivos, método, resultados descriptivos, probabilidad empírica, discusión, limitaciones y referencias.
 - **Presentación de los resultados.pdf**: presentación breve y ordenada del análisis que facilita su comprension.
+- **Código hecho para el análisis.rmd**: Codigo mediante el cual se hizo la presentación del html.
 - **Código utilizado para el análisis.html**: Codigo en HTML que muestra el resultado final de el proyecto a realizar.
 
 ## Requisitos 
@@ -20,7 +21,7 @@ Este repositorio contiene los archivos generados durante el analisis descriptivo
 Para la visualizacion de este es necesario contar con lo siguiente:
 - Un navegador web moderno (Chrome, Firefox, Edge).
 - R y RStudio (solo si se desea reproducir el análisis desde cero).
--Paquetes de R necesarios (según el .Rmd): tidyverse, readr, ggplot2, etc.
+- Paquetes de R necesarios (según el .Rmd): tidyverse, readr, ggplot2, etc.
 - Software para abrir: *CSV (Excel, LibreOffice o similar)*, *XLSX*, *PDF*
 
 ## Como reproducir el archivo HTML
@@ -54,10 +55,16 @@ Para reproducirlo se puede de dos maneras:
 
 Se puede abrir manualmente:
 1. Doble clic → PROYECTO-ESTADISTICAS.html
-2. Clic en el botón Code
-3. Clic en Download ZIP
-4. Extraer la carpeta
-   
+2. Clic en el botón Code.
+3. Clic en la parte derecha en Download raw file.
+4. Extraer el archivo.
+
+Ademas, tambien es posible en:|
+1. Clic en More file actions (...)
+2. Clic en Raw file content.
+3. Clic en Download.
+4. O mantener Ctrl- shift-s en el teclado.
+     
 En RStudio:
 
 1. File → Open File…
